@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: false }));
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the API Security Service!");
+});
+
 app.get("/users", (req, res) => {
   const html = `
     <ul>
