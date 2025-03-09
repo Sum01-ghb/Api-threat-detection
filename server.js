@@ -3,7 +3,7 @@ const fs = require("fs");
 const users = require("./MOCK_DATA.json");
 
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: false }));
 
