@@ -75,7 +75,7 @@ app.post("/api/users", (req, res) => {
   });
 });
 
-app.get("/metrices", async (req, res) => {
+app.get("/metrics", async (req, res) => {
   res.set("Content-Type", register.contentType);
   res.send(await register.metrics());
 });
